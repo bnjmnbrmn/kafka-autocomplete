@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for script in $(ls *.sh)
+do
+    ln -s $script $(echo "$script" | sed 's/\.sh$//')
+done
